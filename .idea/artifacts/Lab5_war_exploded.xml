@@ -1,0 +1,35 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Lab5:war exploded">
+    <output-path>$PROJECT_DIR$/target/Customer Application</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>Lab5</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Lab5" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="customerapplication-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="Lab5" />
+          </element>
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+          <element id="library" level="project" name="Maven: javax.el:el-api:2.2" />
+          <element id="library" level="project" name="Maven: javax.validation:validation-api:2.0.1.Final" />
+          <element id="library" level="project" name="Maven: javax.mail:mail:1.4.7" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.12.0" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/Customer Application/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="Lab5/web/Web" />
+    </root>
+  </artifact>
+</component>
